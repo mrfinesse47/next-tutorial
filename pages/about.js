@@ -1,12 +1,9 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import React from "react";
 
-export default function Home() {
-  //this component is pre rendered, I believe any page is server side rendered
+const about = () => {
   return (
-    <div className={styles.container}>
-      <h1>HomePage</h1>
+    <div>
+      <h1>About</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
         blanditiis, soluta inventore quis quidem eaque eveniet in quisquam
@@ -21,4 +18,6 @@ export default function Home() {
       </p>
     </div>
   );
-}
+};
+
+export default about;
