@@ -8,8 +8,7 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   //this component is pre rendered, I believe any page is server side rendered
   return (
-    <div className={styles.container}>
-      <Navbar />
+    <div>
       <h1>HomePage</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
@@ -26,7 +25,6 @@ export default function Home() {
       <Link href="/ninjas">
         <a>See Ninja Listing</a>
       </Link>
-      <Footer />
     </div>
   );
 }
