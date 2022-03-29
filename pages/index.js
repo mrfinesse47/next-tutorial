@@ -8,22 +8,22 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   //this component is pre rendered, I believe any page is server side rendered
   return (
-    <div>
-      <h1>HomePage</h1>
-      <p>
+    <div className={styles.container}>
+      <h1 className={styles.title}>HomePage</h1>
+      <p className={styles.text}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
         blanditiis, soluta inventore quis quidem eaque eveniet in quisquam
         voluptatum obcaecati id molestias voluptatibus suscipit laborum
         necessitatibus iure. Aspernatur, quidem laborum?
       </p>
-      <p>
+      <p className={styles.text}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
         blanditiis, soluta inventore quis quidem eaque eveniet in quisquam
         voluptatum obcaecati id molestias voluptatibus suscipit laborum
         necessitatibus iure. Aspernatur, quidem laborum?
       </p>
       <Link href="/ninjas">
-        <a>See Ninja Listing</a>
+        <a className={styles.btn}>See Ninja Listing</a>
       </Link>
     </div>
   );
